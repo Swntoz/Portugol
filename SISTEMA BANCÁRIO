@@ -56,8 +56,6 @@ programa {
         caso-contrario 
         escreva("\nDigite uma opção válida!\n")
 
-        escreva("-----------------------------\n")
-
       }
     }enquanto(opcao != 4)
   }
