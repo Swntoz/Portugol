@@ -19,7 +19,7 @@ programa {
 
         escreva("\nSaldo Atual: R$" , (saldo + deposito) , "\n")
 
-        saldo = saldo + deposito
+        saldo += deposito
 
         escreva("-----------------------------\n")
 
@@ -30,13 +30,12 @@ programa {
         leia(saque)
 
 
-        se(saque < deposito){
+        se(saque <= deposito){
           escreva("\nValor do saque: R$ " , saque , " Saldo Atual: R$ " , (saldo - saque) , "\n")
+          saldo -= saque
         }senao{
           escreva("\nSALDO INSUFICIENTE!\n")
         }
-
-        saldo = saldo - saque
 
         escreva("-----------------------------\n")
 
@@ -47,18 +46,14 @@ programa {
 
         escreva("-----------------------------\n")
 
+        pare
+
         caso-contrario 
         escreva("\nDigite uma opção válida!\n")
 
         escreva("-----------------------------\n")
 
       }
-    }enquanto(opcao == 1 ou opcao == 2 ou opcao == 3)
-
-    faca{
-      escreva("Sistema Finalizado!")
-    }enquanto(opcao == 4)
+    }enquanto(opcao != 4)
   }
 }
-
-
