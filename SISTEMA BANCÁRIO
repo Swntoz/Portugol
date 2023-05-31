@@ -48,6 +48,11 @@ programa {
 
         pare
 
+        caso 4:
+        escreva("\nSistema Finalizado\n")
+
+        pare
+
         caso-contrario 
         escreva("\nDigite uma opção válida!\n")
 
